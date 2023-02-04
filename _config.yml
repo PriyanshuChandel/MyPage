@@ -1,10 +1,10 @@
 markdown: kramdown
 url: ''
-baseurl: /PriyanshuChandel
+baseurl: null
 title: Priyanshu Chandel
 description: Hello, I'm Priyanshu Chandel
 site-image: >-
-  /assets/images/self.jpg
+  /assets/images/logo.png
 site-keywords: 'Priyanshu, chandel, Priyanshu chandel, Priyanshu Kumar, Priyanshu youtube, Priyanshu github'
 favicon-url: null
 heroimage: >-
