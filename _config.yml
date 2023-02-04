@@ -4,7 +4,7 @@ baseurl: /PriyanshuChandel
 title: Priyanshu Chandel
 description: Hello, I'm Priyanshu Chandel
 site-image: >-
-  /assets/images/logo.png
+  assets/images/logo.png
 site-keywords: 'Priyanshu, chandel, Priyanshu chandel, Priyanshu Kumar, Priyanshu youtube, Priyanshu github'
 favicon-url: null
 heroimage: >-
@@ -24,7 +24,7 @@ google-analytics: UA-163806439-1
 disqus-shortname: thedevslot
 author-name: Priyanshu Chandel
 author-image: >-
-  /assets/images/self.jpg
+  assets/images/self.jpg
 author-about: >-
   I am a young, enthusiastic coder with a passion for Python programming. I'm proficient in Python and learning HTML, CSS and JS. I started a YouTube channel where I'll post videos related to technology/computer/coding. For additional details, feel free to reach out to me through email or social media.
 author-url: 'https://github.com/PriyanshuChandel'
