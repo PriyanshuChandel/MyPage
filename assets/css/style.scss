@@ -74,7 +74,12 @@ a.navbar-item.is-active {
         margin: auto;
 
         img {
-            border: 0.25rem dotted black;
+            border: 0.25rem dotted white;
+            transition: all 0.25s ease;
+            &:hover{
+                transition: all 0.25s ease;
+                transform: scale(1.05);
+            }
         }
     }
 
@@ -260,7 +265,7 @@ a.navbar-item.is-active {
 #project {
     .columns {
         .column {
-            border-radius: 0.5rem;
+            background: black;
             .image {
                 background-position: center;
                 background-repeat: no-repeat;
