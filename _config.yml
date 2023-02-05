@@ -26,7 +26,7 @@ author-name: Priyanshu Chandel
 author-image: >-
   /assets/images/self.jpg
 author-about: >-
-  I am a young, enthusiastic coder with a passion for Python programming. I'm proficient in Python and learning HTML, CSS and JS. I started a YouTube channel where I'll post videos related to technology/computer/coding. For additional details, feel free to reach out to me through email or social media.
+  I am a enthusiastic coder with a passion for Python programming. I'm proficient in Python and learning HTML, CSS and JS. I started a YouTube channel where I'll post videos related to technology/computer/coding. For additional details, feel free to reach out to me through email or social media.
 author-url: 'https://github.com/PriyanshuChandel'
 sass:
   sass_dir: _sass
