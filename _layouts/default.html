@@ -15,27 +15,48 @@ layout: compress
   {% include footer.html %}
 </body>
 <script>
-  var navItems = document.getElementsByClassName('navbar-item');
-  var heroes = document.getElementsByClassName('hero');
-  const viewOffset = 200; 
-
   window.addEventListener("scroll", function (event) {
     var scroll = this.scrollY;
-    var position = window.pageYOffset;
-
-    for (var i = 0; i < navItems.length; i++) {
-      navItems[i].classList.remove('is-active');
+    var item = document.getElementsByClassName('navbar-item');
+    /* console.log(scroll); */
+    if (scroll < 565) {
+      item[1].classList.add('is-active');
+      item[2].classList.remove('is-active');
+      item[3].classList.remove('is-active');
     }
-
-    for (var i = 0; i < heroes.length; i++) {
-        var sectionTop = heroes[i].offsetTop-viewOffset;
-        var sectionBottom = heroes[i].offsetTop + heroes[i].offsetHeight-viewOffset;
-
-        if (scroll >= sectionTop && scroll < sectionBottom) {
-          navItems[i+1].classList.add('is-active');
-      }
+    if (scroll > 565 && scroll < 1130) {
+      item[1].classList.remove('is-active');
+      item[2].classList.add('is-active');
+      item[3].classList.remove('is-active');
+    }
+    if (scroll > 1130) {
+      item[1].classList.remove('is-active');
+      item[2].classList.remove('is-active');
+      item[3].classList.add('is-active');
     }
   });
 </script>
+<!-- Typed.js DONT TOUCH THIS! -->
+<div id="typed-strings">
+</div>
 
+<script>
+    var typed = new Typed('#typed', {
+        strings: ["Hello, Bonjour, नमस्ते !", "Priyanshu here..",
+            "Curious about coading and data science!",
+            "Test Engineer by Profession but Passionate to learn coding",
+            "Welcome To My page!",
+            "Do Visit my Blog!",
+            "Visit my Small Projects!",
+            "Thanks for visiting my page!"
+        ],
+        backSpeed: 25,
+        smartBackspace: true,
+        backDelay: 1500,
+        startDelay: 1000,
+        typeSpeed: 15,
+        loop: true,
+
+    });
+</script>
 </html>
