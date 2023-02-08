@@ -1,10 +1,9 @@
+<div class="container">
 <nav class="navbar is-black is-fixed-top" role="navigation" aria-label="main navigation" id="navbar">
-    <div class="container" style="
-    margin-left: 0px;
-">
 
         <!-- logo or branding image on left side -->
-        <div class="navbar-brand">
+        <div class="navbar-brand" style="
+        margin-left: 1px;">
             <a class="navbar-item"
                 href="{% if page.layout == 'default' %}{{site.url}}{{site.baseurl}}/#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">
                 <img src={{site.navbar-image}}>
@@ -34,8 +33,8 @@
             </div>
 
         </div>
-    </div>
 </nav>
+</div>
 <!-- Bulma Navbar JS -->
 <script>
     document.addEventListener('DOMContentLoaded', function () {
