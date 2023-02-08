@@ -9,7 +9,7 @@ tags:
 - informative
 - technology
 ---
-> **The entire website was created using using [WhatATheme](https://github.com/thedevslot/WhatATheme){:target="blank"}, a theme developed by [TheDevsLot](https://github.com/thedevslot){:target="blank"} utilizing [Jekyll](https://jekyllrb.com/){:target="blank"}.**
+> The entire website is created using using [WhatATheme](https://github.com/thedevslot/WhatATheme){:target="blank"}, a theme developed by [TheDevsLot](https://github.com/thedevslot){:target="blank"} utilizing [Jekyll](https://jekyllrb.com/){:target="blank"}.
 
 [Jekyll](https://jekyllrb.com/){:target="blank"} is a popular static site generator that allows you to create websites using simple markup languages like HTML, CSS, and Markdown. It provides a flexible and scalable platform for creating simple blogs, portfolios, documentation sites, and more. With Jekyll, you can use templates and plugins to customize the look and functionality of your website, and easily deploy it to a web server or hosting provider.
 
