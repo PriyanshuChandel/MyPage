@@ -23,6 +23,7 @@
             </div> -->
             <!-- navbar items | right side -->
             <div class="navbar-end">
+                <div class="navbar-item" id="currentDateTime"></div>
                 <a class="navbar-item {% if page.layout == 'default' %}is-active{% endif %}"
                     href="{% if page.layout == 'default' %}{{site.url}}{{site.baseurl}}/#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">HOME</a>
                 <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/#about">ABOUT</a>
@@ -55,4 +56,12 @@
             });
         }
     });
+</script>
+
+<script>
+   function displayDateTime() {
+      var date = new Date();
+      document.getElementById("currentDateTime").innerHTML = date.toLocaleString();
+   }
+   setInterval(displayDateTime, 1000);
 </script>
