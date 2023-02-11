@@ -68,7 +68,7 @@
         // Check if the visitor count is stored in local storage
         if (localStorage.getItem("visitorCount")) {
           // If it is, retrieve the visitor count and increment it by 1
-          let count = localStorage.getItem("visitorCount");
+          let count = parseInt(localStorage.getItem("visitorCount"));
           count++;
           localStorage.setItem("visitorCount", count);
         } else {
