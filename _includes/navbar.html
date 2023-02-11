@@ -1,6 +1,5 @@
 <div class="container">
 <nav class="navbar is-black is-fixed-top" role="navigation" aria-label="main navigation" id="navbar">
-
         <!-- logo or branding image on left side -->
         <div class="navbar-brand" style="
         margin-left: 1px;">
@@ -16,6 +15,8 @@
             </div>
         </div>
 
+        <div class="navbar-date " style="position: absolute; left: 50%; transform: translateX(-50%); text-align: center; font-weight: bold; display: flex;align-items: center;height: 100%;" id="currentDateTime"></div>
+
         <!-- children of navbar-menu must be navbar-start and/or navbar-end -->
         <div class="navbar-menu has-background-black" id="navbar-menu">
             <!-- navbar items | left side -->
@@ -23,7 +24,6 @@
             </div> -->
             <!-- navbar items | right side -->
             <div class="navbar-end">
-                <div class="navbar-item" id="currentDateTime"></div>
                 <a class="navbar-item {% if page.layout == 'default' %}is-active{% endif %}"
                     href="{% if page.layout == 'default' %}{{site.url}}{{site.baseurl}}/#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">HOME</a>
                 <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/#about">ABOUT</a>
@@ -59,9 +59,24 @@
 </script>
 
 <script>
-   function displayDateTime() {
-      var date = new Date();
-      document.getElementById("currentDateTime").innerHTML = date.toLocaleString();
-   }
-   setInterval(displayDateTime, 1000);
-</script>
+    function displayDateTime() {
+       var date = new Date();
+       var options = { 
+          day: 'numeric', 
+          month: 'short', 
+          year: 'numeric', 
+          hour: '2-digit', 
+          minute: '2-digit', 
+          second: '2-digit', 
+          timeZoneName: 'short'
+       };
+       var formattedDate = date.toLocaleString("en-US", options); 
+       formattedDate = formattedDate.replace(", ","-").replace(" ","-");
+       document.getElementById("currentDateTime").innerHTML = formattedDate;
+    }
+    setInterval(displayDateTime, 1000);
+ </script>
+ 
+ 
+ 
+ 
