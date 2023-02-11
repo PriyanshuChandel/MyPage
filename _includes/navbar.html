@@ -1,82 +1,82 @@
 <div class="container">
-<nav class="navbar is-black is-fixed-top" role="navigation" aria-label="main navigation" id="navbar">
-        <!-- logo or branding image on left side -->
-        <div class="navbar-brand" style="
-        margin-left: 1px;">
-            <a class="navbar-item"
-                href="{% if page.layout == 'default' %}{{site.url}}{{site.baseurl}}/#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">
-                <img src={{site.navbar-image}}>
-                <strong>&nbsp; {{site.title}}</strong>
-            </a>
-            <div class="navbar-burger" data-target="navbar-menu">
-                <span></span>
-                <span></span>
-                <span></span>
+    <nav class="navbar is-black is-fixed-top" role="navigation" aria-label="main navigation" id="navbar">
+            <!-- logo or branding image on left side -->
+            <div class="navbar-brand" style="
+            margin-left: 1px;">
+                <a class="navbar-item"
+                    href="{% if page.layout == 'default' %}{{site.url}}{{site.baseurl}}/#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">
+                    <img src={{site.navbar-image}}>
+                    <strong>&nbsp; {{site.title}}</strong>
+                </a>
+                <div class="navbar-burger" data-target="navbar-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-        </div>
-
-        <div class="navbar-date " style="position: absolute; left: 50%; transform: translateX(-50%); text-align: center; font-weight: bold; display: flex;align-items: center;height: 100%;" id="currentDateTime"></div>
-
-        <!-- children of navbar-menu must be navbar-start and/or navbar-end -->
-        <div class="navbar-menu has-background-black" id="navbar-menu">
-            <!-- navbar items | left side -->
-            <!-- <div class="navbar-start">
-            </div> -->
-            <!-- navbar items | right side -->
-            <div class="navbar-end">
-                <a class="navbar-item {% if page.layout == 'default' %}is-active{% endif %}"
-                    href="{% if page.layout == 'default' %}{{site.url}}{{site.baseurl}}/#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">HOME</a>
-                <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/#about">ABOUT</a>
-                <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/#contact">CONTACT</a>
-                <a class="navbar-item {% if page.layout == 'blog' %}is-active{% endif %}"
-                    href="{{site.url}}{{site.baseurl}}/blog">BLOG</a>
-                {% include dropdown.html %}
+    
+            <div class="navbar-date " style="position: absolute; left: 50%; transform: translateX(-50%); text-align: center; font-weight: bold; display: flex;align-items: center;height: 100%;" id="currentDateTime"></div>
+    
+            <!-- children of navbar-menu must be navbar-start and/or navbar-end -->
+            <div class="navbar-menu has-background-black" id="navbar-menu">
+                <!-- navbar items | left side -->
+                <!-- <div class="navbar-start">
+                </div> -->
+                <!-- navbar items | right side -->
+                <div class="navbar-end">
+                    <a class="navbar-item {% if page.layout == 'default' %}is-active{% endif %}"
+                        href="{% if page.layout == 'default' %}{{site.url}}{{site.baseurl}}/#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">HOME</a>
+                    <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/#about">ABOUT</a>
+                    <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/#contact">CONTACT</a>
+                    <a class="navbar-item {% if page.layout == 'blog' %}is-active{% endif %}"
+                        href="{{site.url}}{{site.baseurl}}/blog">BLOG</a>
+                    {% include dropdown.html %}
+                </div>
+    
             </div>
-
-        </div>
-</nav>
-</div>
-<!-- Bulma Navbar JS -->
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        /* Get all "navbar-burger" elements */
-        var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-        /* Check if there are any navbar burgers */
-        if ($navbarBurgers.length > 0) {
-            /* Add a click event on each of them */
-            $navbarBurgers.forEach(function ($el) {
-                $el.addEventListener('click', function () {
-                    /* Get the target from the "data-target" attribute */
-                    var target = $el.dataset.target;
-                    var $target = document.getElementById(target);
-                    /* Toggle the class on both the "navbar-burger" and the "navbar-menu" */
-                    $el.classList.toggle('is-active');
-                    $target.classList.toggle('is-active');
+    </nav>
+    </div>
+    <!-- Bulma Navbar JS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            /* Get all "navbar-burger" elements */
+            var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            /* Check if there are any navbar burgers */
+            if ($navbarBurgers.length > 0) {
+                /* Add a click event on each of them */
+                $navbarBurgers.forEach(function ($el) {
+                    $el.addEventListener('click', function () {
+                        /* Get the target from the "data-target" attribute */
+                        var target = $el.dataset.target;
+                        var $target = document.getElementById(target);
+                        /* Toggle the class on both the "navbar-burger" and the "navbar-menu" */
+                        $el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                    });
                 });
-            });
+            }
+        });
+    </script>
+    
+    <script>
+        function displayDateTime() {
+           var date = new Date();
+           var options = { 
+              day: 'numeric', 
+              month: 'short', 
+              year: 'numeric', 
+              hour: '2-digit', 
+              minute: '2-digit', 
+              second: '2-digit', 
+              timeZoneName: 'short'
+           };
+           var formattedDate = date.toLocaleString("en-US", options); 
+           formattedDate = formattedDate.replace(", ","-").replace(" ","-");
+           document.getElementById("currentDateTime").innerHTML = formattedDate;
         }
-    });
-</script>
-
-<script>
-    function displayDateTime() {
-       var date = new Date();
-       var options = { 
-          day: 'numeric', 
-          month: 'short', 
-          year: 'numeric', 
-          hour: '2-digit', 
-          minute: '2-digit', 
-          second: '2-digit', 
-          timeZoneName: 'short'
-       };
-       var formattedDate = date.toLocaleString("en-US", options); 
-       formattedDate = formattedDate.replace(", ","-").replace(" ","-");
-       document.getElementById("currentDateTime").innerHTML = formattedDate;
-    }
-    setInterval(displayDateTime, 1000);
- </script>
- 
- 
- 
- 
+        setInterval(displayDateTime, 1000);
+     </script>
+     
+     
+     
+    
