@@ -61,6 +61,11 @@ a.navbar-item.is-active {
         /*opacity: 0.25*/;
         content: "";
     }
+    @media (max-width: 767px) {
+        &::before {
+            background-size: auto;
+        }
+    }
 }
 .title {
     margin: auto 0.75rem!important;
