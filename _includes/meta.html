@@ -54,7 +54,7 @@
 var chatbox = document.getElementById('fb-customer-chat'); 
 chatbox.setAttribute("page_id", "{{site.chatbot-pageid}}"); 
 chatbox.addEventListener('customerchat.dialogShow', function(event) {
-    FB.CustomerChat.show( {dialog_id: '<{{site.chatbot-pageid}}>'} );
+    FB.CustomerChat.show( {dialog_id: '{{site.chatbot-pageid}}'} );
     FB.CustomerChat.sendText('{{site.chatbot-pageid}}', 'Hello! How can I help you today?'); 
     FB.CustomerChat.sendText('{{site.chatbot-pageid}}', 'Let me know if you have any questions.'); 
     FB.CustomerChat.sendText('{{site.chatbot-pageid}}', 'I am here to assist you.'); 
