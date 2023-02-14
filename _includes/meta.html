@@ -59,13 +59,13 @@ chatbox.setAttribute("page_id", "{{site.chatbot-pageid}}");
 <script> 
 window.fbAsyncInit = function() { FB.init({ xfbml : true, version : 'v12.0' }); 
 // Set greeting dialog display to show
-  FB.CustomerChat.update( {
+FB.CustomerChat.update( { 
     logged_in_greeting: 'Hello! How can we help you today?', 
-    logged_out_greeting: 'Hello! How can we help you today?', 
+    logged_out_greeting: 'Hello! How can we help you today?',
     greeting_dialog_display: 'show'
   } );};
-(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js'; fjs.parentNode.insertBefore(js, fjs);})
-(document, 'script', 'facebook-jssdk'); 
+(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js'; fjs.parentNode.insertBefore(js, fjs);}
+(document, 'script', 'facebook-jssdk')); 
 </script>
 
 
