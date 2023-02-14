@@ -53,18 +53,27 @@
 <script> 
 var chatbox = document.getElementById('fb-customer-chat'); 
 chatbox.setAttribute("page_id", "111048631902429"); 
-chatbox.addEventListener('customerchat.dialogShow', function(event) { 
-    FB.CustomerChat.show( {dialog_id: '111048631902429'} ); 
-    FB.CustomerChat.sendText('111048631902429', 'Hello! How can I help you today?'); FB.CustomerChat.sendText('111048631902429', 'Let me know if you have any questions.'); 
-    FB.CustomerChat.sendText('111048631902429', 'I am here to assist you.'); 
-    FB.CustomerChat.sendText('111048631902429', 'Feel free to drop your whatsapp number, We will connect you shortly.'); 
-    }); 
 </script> 
 
 <!-- Your SDK code --> 
 <script> 
 window.fbAsyncInit = function() 
-{ FB.init({ xfbml : true, version : 'v12.0' }); }; 
+{ 
+    FB.init({ 
+        xfbml : true, 
+        version : 'v12.0' 
+    }); 
+    // Add auto-reply functionality
+    FB.Event.subscribe('message', function(event) { 
+        var senderID = event.sender.id;
+        // Send the auto-reply message
+        FB.api('/me/messages', 'POST', {
+            recipient: { id: senderID },
+            message: { text: 'Hello and thanks for getting in touch with us! What can we help you with today? Feel free to drop your whatsapp number, We will connect you shortly.' }
+        });
+    });
+};
+
 (function(d, s, id) { 
     var js, fjs = d.getElementsByTagName(s)[0]; 
     if (d.getElementById(id)) return; 
@@ -72,12 +81,7 @@ window.fbAsyncInit = function()
     js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js'; 
     fjs.parentNode.insertBefore(js, fjs);
      }(document, 'script', 'facebook-jssdk')); 
-FB.Event.subscribe('customerchat.load', function(event) {
-    var dialog_id = event.detail.dialog_id;
-    console.log('Dialog ID:', dialog_id);
-  });
 </script>
-
 
 <!--Typed.js-->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
