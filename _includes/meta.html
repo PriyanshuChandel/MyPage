@@ -55,10 +55,18 @@ var chatbox = document.getElementById('fb-customer-chat');
 chatbox.setAttribute("page_id", "{{site.chatbot-pageid}}"); 
 chatbox.addEventListener('customerchat.dialogShow', function(event) {
     FB.CustomerChat.show( {dialog_id: '{{site.chatbot-pageid}}'} );
-    FB.CustomerChat.sendText('{{site.chatbot-pageid}}', 'Hello! How can I help you today?'); 
-    FB.CustomerChat.sendText('{{site.chatbot-pageid}}', 'Let me know if you have any questions.'); 
-    FB.CustomerChat.sendText('{{site.chatbot-pageid}}', 'I am here to assist you.'); 
-    FB.CustomerChat.sendText('{{site.chatbot-pageid}}', 'Feel free to drop your whatsapp number, We will connect you shortly.'); 
+    setTimeout(function() {
+    FB.CustomerChat.sendText('<111048631902429>', 'Hello! How can I help you today?');
+  }, 1000);
+  setTimeout(function() {
+    FB.CustomerChat.sendText('<111048631902429>', 'Let me know if you have any questions.');
+  }, 2000);
+  setTimeout(function() {
+    FB.CustomerChat.sendText('<111048631902429>', 'I am here to assist you.');
+  }, 3000);
+  setTimeout(function() {
+    FB.CustomerChat.sendText('<111048631902429>', 'Feel free to drop your whatsapp number, We will connect you shortly.');
+  }, 4000);
 });
 </script> 
 <!-- Your SDK code --> 
