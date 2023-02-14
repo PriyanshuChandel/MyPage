@@ -52,23 +52,15 @@
 <div id="fb-customer-chat" class="fb-customerchat" theme_color="#3A3D4A"></div>
 <script> 
 var chatbox = document.getElementById('fb-customer-chat'); 
-chatbox.setAttribute("page_id", "{{site.chatbot-pageid}}"); 
-chatbox.addEventListener('customerchat.dialogShow', function(event) {
-    FB.CustomerChat.show( {dialog_id: '{{site.chatbot-pageid}}'} );
-    setTimeout(function() {
-    FB.CustomerChat.sendText('<111048631902429>', 'Hello! How can I help you today?');
-  }, 1000);
-  setTimeout(function() {
-    FB.CustomerChat.sendText('<111048631902429>', 'Let me know if you have any questions.');
-  }, 2000);
-  setTimeout(function() {
-    FB.CustomerChat.sendText('<111048631902429>', 'I am here to assist you.');
-  }, 3000);
-  setTimeout(function() {
-    FB.CustomerChat.sendText('<111048631902429>', 'Feel free to drop your whatsapp number, We will connect you shortly.');
-  }, 4000);
-});
+chatbox.setAttribute("page_id", "111048631902429"); 
+chatbox.addEventListener('customerchat.dialogShow', function(event) { FB.CustomerChat.show( {dialog_id: '111048631902429'} ); 
+FB.CustomerChat.sendText('111048631902429', 'Hello! How can I help you today?'); 
+FB.CustomerChat.sendText('111048631902429', 'Let me know if you have any questions.'); 
+FB.CustomerChat.sendText('111048631902429', 'I am here to assist you.'); 
+FB.CustomerChat.sendText('111048631902429', 'Feel free to drop your whatsapp number, We will connect you shortly.'); }); 
 </script> 
+<!-- Your SDK code --> 
+<script> window.fbAsyncInit = function() { FB.init({ xfbml : true, version : 'v12.0' }); }; (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js'; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk')); </script>
 <!-- Your SDK code --> 
 <script> 
 window.fbAsyncInit = function() { FB.init({ xfbml : true, version : 'v12.0' }); }; (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; 
