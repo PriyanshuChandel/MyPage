@@ -57,7 +57,16 @@ chatbox.setAttribute("page_id", "{{site.chatbot-pageid}}");
 
 <!-- Your SDK code --> 
 <script> 
-window.fbAsyncInit = function() { FB.init({ xfbml : true, version : 'v12.0' });};
+window.fbAsyncInit = function() { FB.init({ xfbml : true, version : 'v12.0' });
+// Add auto-reply functionality
+    FB.Event.subscribe('message', function(event) { 
+        var senderID = event.sender.id;
+        // Send the auto-reply message
+        FB.api('/me/messages', 'POST', { recipient: { id: senderID },
+            message: { text: 'Hello and thanks for getting in touch with us! What can we help you with today? Feel free to drop your whatsapp number and We will connect you shortly.' }
+        });
+    });
+};
 (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js'; fjs.parentNode.insertBefore(js, fjs);}
 (document, 'script', 'facebook-jssdk')); 
 </script>
