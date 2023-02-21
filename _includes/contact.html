@@ -43,6 +43,15 @@
                 <i class="fab fa-twitter"></i>Tweet me on Twitter
             </a>
             {% endunless %}
+            {% unless site.twitter_username == %}
+            <a id="contact-button" href="https://t.me/{{site.telegram_username}}"
+                class="button is-rounded is-uppercase has-text-weight-normal is-white is-outlined has-text-weight-semibold column is-two-fifths"
+                target="_blank">
+                <i class="fab fa-telegram"></i>Ping me on Telegram
+            </a>
+            {% endunless %}
+
+
             <hr>
             <h3 class="is-size-5 is-uppercase has-text-weight-semibold has-text-white is-marginless">
                 You Can find me here
