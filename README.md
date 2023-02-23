@@ -1,3 +1,17 @@
+<img src="https://priyanshuchandel.github.io/assets/images/logo.png" data-canonical-src="https://priyanshuchandel.github.io/assets/images/logo.png" width="100" height="100"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
 # WhatATheme
 **WhatATheme** is a customizable Jekyll Portfolio theme which supports blogging. You can use this theme in order to create an elegant, fully responsive portfolio.
 
