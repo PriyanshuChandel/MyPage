@@ -25,11 +25,11 @@ Feel free to explore the website and read my blog posts. If you are interested i
 Contributions to the website are welcome. If you find a bug or have a suggestion for improvement, please open an issue on the repository. If you would like to make changes to the code, feel free to submit a pull request.
 
 
-### Credits :bulb:
+## Credits :bulb:
 * [Sneha Omer](http://sassyecoder.github.io/)
 * [Harsh Trivedi](http://harsh98trivedi.github.io/)
 
-### License
+## License
 The contents of this repository are licensed under the [**GNU General Public License v2.0**](https://github.com/thedevslot/WhatATheme/blob/master/LICENSE)
 
 ---
