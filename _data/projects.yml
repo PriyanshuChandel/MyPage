@@ -7,3 +7,8 @@
   link: https://github.com/PriyanshuChandel/Python_Beginner_Exercises
   image: /assets/images/project-2.png
   description: Python3 practice exercises for beginner
+
+- name: Your Personal Assistant
+  link: https://github.com/PriyanshuChandel/Your-Personal-Assistant
+  image: /assets/images/project-3.png
+  description: This is a Python-based personal assistant which can process user voice and perform various tasks based on the user's input.
