@@ -27,7 +27,9 @@
 
             <!--Link Section-->
             <div class="column has-text-white">
-                <h3>Visitors : <span id="visits"></span></h3><br>
+                {% if page.url == '/' %}
+                    <h3>Visitors : <span id="visits"></span></h3><br>
+                {% endif %}
                 <h3>More Links</h3>
                 <!--
                 {% for sitepage in site.html_pages offset: 4 %}
