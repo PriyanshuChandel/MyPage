@@ -5,16 +5,9 @@
 ### Credits :bulb:
 * [Sneha Omer](http://sassyecoder.github.io/)
 * [Harsh Trivedi](http://harsh98trivedi.github.io/)
-
-
-
-
-
-
-
-
-
-
+* 
+### License
+The contents of this repository are licensed under the [**GNU General Public License v2.0**](https://github.com/thedevslot/WhatATheme/blob/master/LICENSE)
 
 # Theme Used to Develop this Webpage - WhatATheme
 **WhatATheme** is a customizable Jekyll Portfolio theme which supports blogging. You can use this theme in order to create an elegant, fully responsive portfolio.
@@ -35,7 +28,7 @@
 * Analytics using Google Analytics
 * Instant Search using [Simple Jekyll Search](https://github.com/christian-fei/Simple-Jekyll-Search/)
 
-# Installation :books:
+# WhatATheme Installation :books:
 ### System Requirements
 * [Ruby](https://www.ruby-lang.org/en/)
 * [Jekyll](https://jekyllrb.com/)
@@ -49,7 +42,3 @@
 > You can read **How to Install and use WhatATheme?** [**here**](https://thedevslot.github.io/WhatATheme/blog/how-to-install-whatatheme)
 
 [<img src="https://i.imgur.com/TVI946Z.png" width="250" />](https://youtu.be/VfPa2c9kwhQ)
-
-
-### License
-The contents of this repository are licensed under the [**GNU General Public License v2.0**](https://github.com/thedevslot/WhatATheme/blob/master/LICENSE)
