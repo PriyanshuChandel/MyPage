@@ -16,14 +16,12 @@
 
 
 
-# WhatATheme
+# Theme Used to Develop this Webpage - WhatATheme
 **WhatATheme** is a customizable Jekyll Portfolio theme which supports blogging. You can use this theme in order to create an elegant, fully responsive portfolio.
 
 #### You can checkout the [**Demo Here**](https://thedevslot.github.io/WhatATheme/) :boom:
 
-![WhatATheme](assets/images/meta.jpg)
-
-# Features :sparkles:
+# WhatATheme Features :sparkles:
 * Free and Easy setup
 * No Coding Required
 * Compatible with [Github Pages](https://pages.github.com/)
@@ -51,13 +49,6 @@
 > You can read **How to Install and use WhatATheme?** [**here**](https://thedevslot.github.io/WhatATheme/blog/how-to-install-whatatheme)
 
 [<img src="https://i.imgur.com/TVI946Z.png" width="250" />](https://youtu.be/VfPa2c9kwhQ)
-
----
-
-
-
----
-
 
 
 ### License
