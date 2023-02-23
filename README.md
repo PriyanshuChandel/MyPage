@@ -1,11 +1,12 @@
 <img src="https://priyanshuchandel.github.io/assets/images/logo.png" data-canonical-src="https://priyanshuchandel.github.io/assets/images/logo.png" width="100" height="100"/>
 
-## Visit at [priyanshuchandel.github.io](https://priyanshuchandel.github.io)
+## Visit My Personal Website at [priyanshuchandel.github.io](https://priyanshuchandel.github.io)
+This repository contains the source code for my personal website where I publish blog posts, participate in affiliated Amazon marketing, and share information about myself.
 
 ### Credits :bulb:
 * [Sneha Omer](http://sassyecoder.github.io/)
 * [Harsh Trivedi](http://harsh98trivedi.github.io/)
-* 
+
 ### License
 The contents of this repository are licensed under the [**GNU General Public License v2.0**](https://github.com/thedevslot/WhatATheme/blob/master/LICENSE)
 
