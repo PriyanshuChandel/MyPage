@@ -12,3 +12,8 @@
   link: https://github.com/PriyanshuChandel/Your-Personal-Assistant
   image: /assets/images/project-3.png
   description: This is a Python-based personal assistant which can process user voice and perform various tasks based on the user's input.
+
+- name: NewsReader - Hindi/English
+  link: https://github.com/PriyanshuChandel/NewsReader_Hindi_English
+  image: /assets/images/project-4.png
+  description: This is a Python program that can read news from different sources in English and Hindi, respectively. It uses an API to fetch news articles from various news sources and read them aloud using the text-to-speech (TTS) and SAPI functionality of your operating system.
