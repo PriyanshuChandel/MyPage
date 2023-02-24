@@ -17,3 +17,48 @@
   link: https://github.com/PriyanshuChandel/NewsReader_Hindi_English
   image: /assets/images/project-4.png
   description: This is a Python program that can read news from different sources in English and Hindi, respectively. It uses an API to fetch news articles from various news sources and read them aloud using the text-to-speech (TTS) and SAPI functionality of your operating system.
+
+- name: GitHub Page
+  link: https://github.com/PriyanshuChandel/PriyanshuChandel.github.io
+  image: /assets/images/project-5.png
+  description: This repository contains the source code for my personal website where I publish blog posts, participate in affiliated Amazon marketing, and share information about myself.
+
+- name: File Listing - GUI
+  link: https://github.com/PriyanshuChandel/File_Listing-GUI
+  image: /assets/images/project-6.png
+  description: This Python program takes a directory path as input and lists all the files and folders present inside it or its subfolders recursively.
+
+- name: MD5 Checksum Listing - GUI
+  link: https://github.com/PriyanshuChandel/MD5-Checksum-Checker
+  image: /assets/images/project-7.png
+  description: This is a Python GUI program that allows the user to select a directory using a file dialog and generate a checksum for all the files present in the selected directory and its subdirectories recursively. The program generates an Excel spreadsheet containing a list of file checksums.
+
+- name: Wireshark Filter and Merge Tool
+  link: https://github.com/PriyanshuChandel/Wireshark-Filter-Merge
+  image: /assets/images/project-8.png
+  description: This is a Python GUI tool for merging filtered PCAP or PCAPNG files into a single output file. The tool uses Wireshark to apply the filter to the selected files.
+
+- name: Excel Data Copier
+  link: https://github.com/PriyanshuChandel/Excel_Data_Copier
+  image: /assets/images/project-9.png
+  description: This is a Python GUI program which allows you to copy data from one Excel sheet to another based on user-defined criteria.
+
+- name: Host Windows Process Killer
+  link: https://github.com/PriyanshuChandel/WindowsProccessKiller
+  image: /assets/images/project-10.png
+  description: It is a Windows process killer tool developed using Python. It allows you to select one or more hosts, select one or more processes to kill, and then execute the kill command on those hosts simultaneously.
+
+- name: Wi-Fi Password Retriever
+  link: https://github.com/PriyanshuChandel/Wi-Fi_Password_Retriever
+  image: /assets/images/project-11.png
+  description: This is a Python program that retrieves the password of a saved Wi-Fi network on a Windows computer. The program has a simple graphical user interface (GUI) that allows users to select the Wi-Fi network they want to retrieve the password for.
+
+- name: SSH Log Collector - PySFTP
+  link: https://github.com/PriyanshuChandel/SSH_Log_Collector-PySFTP
+  image: /assets/images/project-12.png
+  description: SSH Log Collector is a GUI application used to collect different types of logs (basic and system logs) of the devices via SSH protocol. Additionally, it can collect custom logs provided by the user. The application is developed in Python and uses PySFTP to communicate with the remote devices. The graphical user interface (GUI) is developed using Tkinter.
+
+- name: SSH Log Collector - Putty Utilities
+  link: https://github.com/PriyanshuChandel/SSH_Log_Collector-Putty-Utilities
+  image: /assets/images/project-13.png
+  description: This python program is designed to collect logs from remote network devices. The program uses the tkinter library for the graphical user interface (GUI) and the subprocess module to execute remote shell commands via SSH and SCP protocols.
