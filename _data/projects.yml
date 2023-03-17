@@ -62,3 +62,8 @@
   link: https://github.com/PriyanshuChandel/SSH_Log_Collector-Putty-Utilities
   image: /assets/images/project-13.png
   description: This python program is designed to collect logs from remote network devices. The program uses the tkinter library for the graphical user interface (GUI) and the subprocess module to execute remote shell commands via SSH and SCP protocols.
+  
+  - name: FontAwesome Reference
+  link: https://priyanshuchandel.github.io/FontAwesome/
+  image: /assets/images/project-14.png
+  description: This python program is designed to collect logs from remote network devices. The program uses the tkinter library for the graphical user interface (GUI) and the subprocess module to execute remote shell commands via SSH and SCP protocols.
